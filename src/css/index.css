@@ -16,11 +16,9 @@ body {
 /* Cuerpo */
 
 .main {
-    display: flex;
     padding-left: 50px;
     padding-right: 50px;
 }
-
 
 .presentation_content {
     display: flex;
