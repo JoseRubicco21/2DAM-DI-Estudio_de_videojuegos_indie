@@ -16,8 +16,14 @@ body {
 /* Cuerpo */
 
 .main {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.scroll {
+    display: flex;
+    padding: 0;
+    gap: 24px;
 }
 
 .presentation_content {
@@ -25,29 +31,53 @@ body {
 }
 
 .presentation_content_grid {
-    display: flex;
-    padding-left: 0px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
+    padding-left: 0%;
+    padding-bottom: 5%;
+    padding-right: 3%;
+}
+
+.presentation_content_grid img {
+    max-width: 100%;
 }
 
 #presentation_grid_two {
-    flex-direction: column;
+    width: 25%;
+}
+
+#presentation_grid_three {
+    padding-left: 10%;
+    padding-right: 0%;
 }
 
 #presentation_grid_three button {
     align-items: top;
     border-radius: 100%;
-    size: 1px;
+    size: 1%;
 }
 
-.scroll {
-    display: inline-flex;
-    padding: 0;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 24px;
+#presentation_game_images img {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.article img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#contacts {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contacts_text{
+    width: 35%;
+    padding-right: 25%;
+}
+
+#contacts_photo {
+    max-width: 100%;
 }
 
 /* Pie */
@@ -57,6 +87,7 @@ footer {
     padding: 49px 0 96px 0;
     justify-content: center;
     align-items: top;
+    margin-top: 50%;
 }
 
 .grid {
@@ -68,10 +99,13 @@ footer {
 .grid_row {
     display: flex;
     flex-direction: column;
-    padding: 50px 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10% ;
+    padding-top: 2%;
 }
 
-/* Tipografías */
+/* Tipografías y colores */
 
 a {
     text-decoration: none;
@@ -82,13 +116,20 @@ button {
     border-color: gray;
     border-radius: 40px;
     padding: 20px;
-    width: 100px;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 10px;
 }
 
 .title {
     color: #111827;
     font-family: Inter;
     font-style: normal;
+    font-size: 30px;
     font-weight: 700;
     line-height: 36px;
 }
@@ -97,6 +138,38 @@ button {
     color: #6B7280;
     font-family: Inter;
     font-style: normal;
+    font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+}
+
+
+.article_title {
+    color: #111827;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.article_subtitle {
+    color: #6B7280;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.blue_primary_text {
+    color: #09BCED;
+}
+
+.yellow_primary_text {
+    color: #EDDA09;
+}
+
+.red_primary_text {
+    color: #ED0955;
 }

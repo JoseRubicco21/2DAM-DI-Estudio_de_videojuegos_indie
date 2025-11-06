@@ -10,8 +10,14 @@
 
 <body>
     <div class="head">
-        <p class="title" id="head_title">Title of company</p>
-        <p class="subtitle" id="head_subtitle">Subtitle of company</p>
+        <p class="title" id="head_title"> <span class="blue_primary_text">that</span> <span
+                class="yellow_primary_text">game</span> <span class="red_primary_text">company</span> </p>
+        <p class="subtitle" id="head_subtitle">
+            is a game studio dedicated to creating <span class="blue_primary_text">timeless</span> interactive
+            entertainment
+            that <span class="yellow_primary_text">inspires</span> human <span
+                class="red_primary_text">connection</span> across the world, for all ages.
+        </p>
     </div>
 
 
@@ -33,19 +39,27 @@
                     <button>Explore</button>
                 </div>
 
+                <!-- Esto por ahora esta comentado porque, como esta ahora no cumple niguna funcionalidad.
+
                 <div class="presentation_content_grid" id="presentation_grid_three">
                     <button>←</button>
                     <button>→</button>
                 </div>
+-->
             </div>
 
         </div>
 
-        <div class="scroll">
-            <img src="/img/scroll1.png" alt="game1">
-            <img src="/img/scroll2.png" alt="game2">
-            <img src="/img/scroll3.png" alt="game3">
-            <img src="/img/scroll4.png" alt="game4">
+        <!-- ESTOS ENLACES SON PLACEHOLDERS, HAY QUE CAMBIARLOS ANTES DE ENSEÑARLOS AL CLIENTE -->
+
+        <div class="scroll" id="presentation_game_images">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="/img/scroll1.png" alt="game1"> </a>
+            <a href="https://youtu.be/QOhmcbfwxnA?si=0bivh4o4yeAaJ0q8"> <img src="/img/scroll2.png" alt="game2"> </a>
+            <a href="https://youtu.be/URtqADoz9uA?si=1Ba-fkm0Ym0VCwhE&t=19"> <img src="/img/scroll3.png" alt="game3">
+            </a>
+            <a href="https://youtu.be/2MiNsu724zE?si=WTvVTstrYgVFJj7t"> <img src="/img/scroll4.png" alt="game4"> </a>
+
+
         </div>
     </div>
 
@@ -53,27 +67,44 @@
         <p class="title">Recent News</p>
         <div class="scroll">
             <div class="article">
-                <img src="/img/placeholder.png" alt="news article 1">
-                <p class="title">That videogame company announces Sky: The Two Embers - Part 1</p>
-                <p class="subtitle">Jan 21, 2024</p>
+                <a href="">
+                    <img src="/img/image_preview1.png" alt="news article 1">
+                    <p class="article_title">That videogame company announces Sky: The Two Embers - Part 1</p>
+                    <p class="article_subtitle">Jan 21, 2024</p>
+                </a>
             </div>
             <div class="article">
-                <img src="/img/placeholder.png" alt="news article 2">
-                <p class="title">That videogame company announces Sky: The Two Embers - Part 1 and Global launch</p>
-                <p class="subtitle">Jan 21, 2024</p>
+                <a href="">
+                    <img src="/img/image_preview2.png" alt="news article 2">
+                    <p class="article_title">That videogame company announces Sky: The Two Embers - Part 1 and Global
+                        launch
+                    </p>
+                    <p class="article_subtitle">Jan 21, 2024</p>
+                </a>
             </div>
             <div class="article">
-                <img src="/img/placeholder.png" alt="news article 3">
-                <p class="title">We're going big with the new in-house publishing capabilities</p>
-                <p class="subtitle">Jan 21, 2024</p>
+                <a href="">
+                    <img src="/img/image_preview3.png" alt="news article 3">
+                    <p class="article_title">We're going big with the new in-house publishing capabilities</p>
+                    <p class="article_subtitle">Jan 21, 2024</p>
+                </a>
             </div>
         </div>
     </div>
 
+    <div class="main" id="contacts">
+        <div id="contacts_text">
+            <p class="title">Together we make magic</p>
+            <p class="subtitle">Storytelling through artful interactivity is our passion. We're on a mission to build a
+                team of like-minded creatives and engineers to make that happen.</p>
+            <a href="/src/html/contacto.html">
+                <button>Our studio</button>
+            </a>
+        </div>
 
-
-
-    <div id="contacts">
+        <div id="contacts_photo">
+            <img src="/img/team_subtitle.png" alt="Our team">
+        </div>
     </div>
 
     <div class="footer">
