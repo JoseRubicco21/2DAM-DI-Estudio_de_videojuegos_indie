@@ -1,0 +1,175 @@
+body {
+    margin: 0%;
+}
+
+/* Cabeza */
+
+.head {
+    display: flex;
+    padding: 48px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Cuerpo */
+
+.main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.scroll {
+    display: flex;
+    padding: 0;
+    gap: 24px;
+}
+
+.presentation_content {
+    display: flex;
+}
+
+.presentation_content_grid {
+    padding-left: 0%;
+    padding-bottom: 5%;
+    padding-right: 3%;
+}
+
+.presentation_content_grid img {
+    max-width: 100%;
+}
+
+#presentation_grid_two {
+    width: 25%;
+}
+
+#presentation_grid_three {
+    padding-left: 10%;
+    padding-right: 0%;
+}
+
+#presentation_grid_three button {
+    align-items: top;
+    border-radius: 100%;
+    size: 1%;
+}
+
+#presentation_game_images img {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.article img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#contacts {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contacts_text{
+    width: 35%;
+    padding-right: 25%;
+}
+
+#contacts_photo {
+    max-width: 100%;
+}
+
+/* Pie */
+
+footer {
+    display: flex;
+    padding: 49px 0 96px 0;
+    justify-content: center;
+    align-items: top;
+    margin-top: 50%;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #E5E7EB;
+}
+
+.grid_row {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10% ;
+    padding-top: 2%;
+}
+
+/* Tipografías y colores */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border-color: gray;
+    border-radius: 40px;
+    padding: 20px;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.title {
+    color: #111827;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.subtitle {
+    color: #6B7280;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.article_title {
+    color: #111827;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.article_subtitle {
+    color: #6B7280;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.blue_primary_text {
+    color: #09BCED;
+}
+
+.yellow_primary_text {
+    color: #EDDA09;
+}
+
+.red_primary_text {
+    color: #ec3815;
+}
