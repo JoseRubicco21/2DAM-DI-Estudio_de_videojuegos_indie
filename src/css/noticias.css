@@ -1,0 +1,409 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 0; 
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+.logo span {
+    margin-left: 12px; 
+}
+
+
+.stair-step {
+    background: #00AEDE; 
+    border: none; 
+    transition: all 0.3s;
+}
+
+
+.stair-step.stair-1 {
+    width: 12px;
+    height: 24px;
+}
+
+
+.stair-step.stair-2 {
+    width: 12px;
+    height: 16px;
+}
+
+
+.stair-step.stair-3 {
+    width: 12px;
+    height: 8px;
+}
+
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #00AEDE, #0099CC);
+    border-radius: 4px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #00AEDE;
+}
+
+.btn-primary {
+    background-color: #00AEDE;
+    color: white !important;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.btn-primary:hover {
+    background-color: #0099CC;
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 0;
+    flex: 1; 
+}
+
+/* Header */
+.page-header {
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #999;
+}
+
+/* Filtros */
+.filter-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tab {
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.tab.active {
+    background-color: rgba(0, 174, 222, 0.2); 
+    border-color: #00AEDE;
+    color: #00AEDE; 
+}
+
+.tab:hover {
+    border-color: #00AEDE;
+}
+
+/* News Grid */
+.news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.news-card {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.news-tag {
+    display: inline-block;
+    color: #00AEDE;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.news-tag.orange {
+    color: #DE4800;
+}
+
+.news-tag.cyan {
+    color: #00AEDE;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.news-description {
+    color: #888888;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.news-date {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    background-color: #00AEDE;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.btn-secondary:hover {
+    background-color: #0099CC;
+}
+
+/* Indice de Páginas */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-btn {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.page-btn:hover {
+    border-color: #00AEDE;
+    color: #00AEDE;
+}
+
+.page-btn.active {
+    background-color: #00AEDE;
+    color: white;
+    border-color: #00AEDE;
+}
+
+.page-dots {
+    color: #999;
+    padding: 0 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 0 20px;
+    margin-top: auto; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00AEDE;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+.social-icon img[alt="YouTube"] {
+    width: 36px;
+    height: 36px;
+}
+
+.social-icon:hover {
+    background-color: #00AEDE;
+}
+
+.copyright {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+    .news-card {
+        flex-direction: column;
+    }
+    
+    .news-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .page-header h1 {
+        font-size: 32px;
+    }
+}
