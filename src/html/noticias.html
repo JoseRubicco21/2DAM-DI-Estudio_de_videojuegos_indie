@@ -1,11 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Noticias - Indie Game Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/noticias.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <!-- Logo hecho con 3 divs(escalones) -->
+                    <div class="stair-step stair-1"></div>
+                    <div class="stair-step stair-2"></div>
+                    <div class="stair-step stair-3"></div>
+                    <span>Indie Game Studio</span>
+                </div>
+                <nav class="nav">
+                    <a href="juegos.html">Juegos</a>
+                    <a href="index.html">Sobre nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="juegos.html" class="btn-primary">Comprar Juegos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Titulo -->
+            <section class="page-header">
+                <h1>Noticias</h1>
+                <p class="subtitle">Últimas actualizaciones y anuncios de nuestro estudio</p>
+            </section>
+
+            <!-- Filtros para los juegos -->
+            <div class="filter-tabs">
+                <button class="tab active">Todo</button>
+                <button class="tab">Actualizaciones</button>
+                <button class="tab">Anuncios</button>
+                <button class="tab">Eventos</button>
+            </div>
+
+            <!-- Noticias -->
+            <div class="news-grid">
+                <!-- Ej 1 -->
+                <article class="news-card" data-category="actualizaciones">
+                    <div class="news-image">
+                        <img src="/img/juego1.png" alt="CyberQuest">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">Actualizaciones de juegos</span>
+                        <h2 class="news-title">¡Nuevo nivel disponible para CyberQuest!</h2>
+                        <p class="news-description">
+                            Hemos trabajado duro en una nueva actualización para CyberQuest que incluye correcciones de errores, nuevas características y un nivel completamente nuevo. ¡Descubre todos los detalles aquí!
+                        </p>
+                        <p class="news-date">Publicado el 26 de octubre de 2023</p>
+                        <button class="btn-secondary">Leer más</button>
+                    </div>
+                </article>
+
+                <!-- Ej 2 -->
+                <article class="news-card" data-category="anuncios">
+                    <div class="news-image">
+                        <img src="/img/juego2.png" alt="Nuevo proyecto">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag orange">Anuncios</span>
+                        <h2 class="news-title">Anunciamos nuestro próximo proyecto</h2>
+                        <p class="news-description">
+                            ¡Estamos encantados de anunciar que estamos trabajando en un nuevo juego! Aún no podemos compartir muchos detalles, pero estamos muy emocionados de compartir esta noticia con ustedes.
+                        </p>
+                        <p class="news-date">Publicado el 24 de octubre de 2023</p>
+                        <button class="btn-secondary">Leer más</button>
+                    </div>
+                </article>
+
+                <!-- Ej 3 -->
+                <article class="news-card" data-category="eventos">
+                    <div class="news-image">
+                        <img src="/img/juego3.png" alt="Game Dev Con">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag cyan">Eventos</span>
+                        <h2 class="news-title">¡Nos vemos en la Game Dev Con 2024!</h2>
+                        <p class="news-description">
+                            Estaremos presentes en la Game Dev Con de este año para mostrar nuestros últimos proyectos. ¡Ven a nuestro stand para probar demos exclusivas y charlar con el equipo!
+                        </p>
+                        <p class="news-date">Publicado el 20 de octubre de 2023</p>
+                        <button class="btn-secondary">Ver artículo c...</button>
+                    </div>
+                </article>
+
+                <!-- Ej 4, duplicado del 3 para ver como funciona el paginado -->
+                <article class="news-card" data-category="eventos">
+                    <div class="news-image">
+                        <img src="/img/juego3.png" alt="Game Dev Con">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag cyan">Eventos</span>
+                        <h2 class="news-title">¡Nos vemos en la Game Dev Con 2024!</h2>
+                        <p class="news-description">
+                            Estaremos presentes en la Game Dev Con de este año para mostrar nuestros últimos proyectos. ¡Ven a nuestro stand para probar demos exclusivas y charlar con el equipo!
+                        </p>
+                        <p class="news-date">Publicado el 20 de octubre de 2023</p>
+                        <button class="btn-secondary">Ver artículo c...</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Indice paginas -->
+            <div class="pagination">
+                <button class="page-btn">&lt;</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn">8</button>
+                <button class="page-btn">&gt;</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+               <div class="logo">
+                    <!-- Logo hecho con 3 divs(escalones) -->
+                    <div class="stair-step stair-1"></div>
+                    <div class="stair-step stair-2"></div>
+                    <div class="stair-step stair-3"></div>
+                    <span>Indie Game Studio</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#terminos">Términos de Servicio</a>
+                    <a href="#privacidad">Política de Privacidad</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://x.com/?lang=es" class="social-icon">
+                        <img src="/img/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://discord.com/" class="social-icon">
+                        <img src="/img/discord.svg" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-icon">
+                        <img src="/img/youtube.svg" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">© 2023 Indie Game Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sistema de filtrado y paginación de noticias
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tabs .tab');
+            const newsCards = document.querySelectorAll('.news-card');
+            const pageButtons = document.querySelectorAll('.page-btn');
+            const cardsPerPage = 3;
+            let currentPage = 1;
+            let currentFilter = 'todo';
+
+            // Función para obtener las tarjetas filtradas
+            function getFilteredCards() {
+                return Array.from(newsCards).filter(card => {
+                    if (currentFilter === 'todo') {
+                        return true;
+                    }
+                    return card.getAttribute('data-category') === currentFilter;
+                });
+            }
+
+            // Función para mostrar las tarjetas de la página actual
+            function showPage(page) {
+                const filteredCards = getFilteredCards();
+                const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
+                
+                // Validar página
+                if (page < 1) page = 1;
+                if (page > totalPages) page = totalPages;
+                currentPage = page;
+
+                // Ocultar todas las tarjetas
+                newsCards.forEach(card => card.style.display = 'none');
+
+                // Mostrar solo las tarjetas de la página actual
+                const startIndex = (page - 1) * cardsPerPage;
+                const endIndex = startIndex + cardsPerPage;
+                const cardsToShow = filteredCards.slice(startIndex, endIndex);
+                
+                cardsToShow.forEach(card => card.style.display = 'flex');
+
+                // Actualizar botones de paginación
+                updatePaginationButtons(totalPages);
+            }
+
+            // Función para actualizar los botones de paginación
+            function updatePaginationButtons(totalPages) {
+                pageButtons.forEach(btn => {
+                    const btnText = btn.textContent.trim();
+                    
+                    if (btnText === '<' || btnText === '>') {
+                        // Botones de navegación
+                        btn.disabled = false;
+                        if (btnText === '<' && currentPage === 1) {
+                            btn.disabled = true;
+                            btn.style.opacity = '0.5';
+                        } else if (btnText === '>' && currentPage === totalPages) {
+                            btn.disabled = true;
+                            btn.style.opacity = '0.5';
+                        } else {
+                            btn.style.opacity = '1';
+                        }
+                    } else if (!isNaN(btnText)) {
+                        // Botones numéricos
+                        btn.classList.remove('active');
+                        if (parseInt(btnText) === currentPage) {
+                            btn.classList.add('active');
+                        }
+                    }
+                });
+            }
+
+            // Event listeners para filtros
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    currentFilter = this.textContent.trim().toLowerCase();
+                    currentPage = 1; 
+                    showPage(currentPage);
+                });
+            });
+
+            // Event listeners para paginación
+            pageButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const btnText = this.textContent.trim();
+                    
+                    if (btnText === '<') {
+                        showPage(currentPage - 1);
+                    } else if (btnText === '>') {
+                        showPage(currentPage + 1);
+                    } else if (!isNaN(btnText)) {
+                        showPage(parseInt(btnText));
+                    }
+                });
+            });
+
+            // Mostrar primera página al cargar
+            showPage(1);
+        });
+    </script>
 </body>
 </html>
