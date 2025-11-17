@@ -7,25 +7,16 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-color: #f5f5f5;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    color: #1F2937;
 }
 
-.main-content {
-    flex: 1;
-}
-
-header {
+.encabezado {
     background-color: white;
     padding: 20px 50px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
 
 .logo {
@@ -34,10 +25,10 @@ header {
     gap: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #1F2937;
 }
 
-.logo-icon {
+.icono-logo {
     width: 30px;
     height: 30px;
     position: relative;
@@ -46,7 +37,7 @@ header {
 }
 
 /* Rectángulo inferior izquierdo */
-.rect-bottom {
+.rect-inferior {
     width: 18px;
     height: 18px;
     background: #00AEDE;
@@ -56,7 +47,7 @@ header {
 }
 
 /* Rectángulo superior derecho */
-.rect-top {
+.rect-superior {
     width: 18px;
     height: 18px;
     background: #00AEDE;
@@ -65,7 +56,7 @@ header {
     top: 0;
 }
 
-nav {
+.navegacion {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -74,24 +65,24 @@ nav {
     transform: translateX(-50%);
 }
 
-nav a {
+.navegacion a {
     text-decoration: none;
-    color: #666;
+    color: #6B7280;
     font-size: 16px;
     transition: color 0.3s;
 }
 
-nav a:hover, nav a.active {
-    color: #00AEDE;
+.navegacion a:hover, .navegacion a.active {
+    color: #00b1db;
 }
 
-.header-buttons {
+.botones-encabezado {
     display: flex;
     gap: 15px;
 }
 
-.btn-buy {
-    background-color: #00AEDE;
+.boton-comprar {
+    background-color: #00b1db;
     color: white;
     padding: 10px 25px;
     border-radius: 5px;
@@ -100,13 +91,13 @@ nav a:hover, nav a.active {
     transition: background-color 0.3s;
 }
 
-.btn-buy:hover {
-    background-color: #0099CC;
+.boton-comprar:hover {
+    background-color: #25555d;
 }
 
-.btn-sign {
-    background-color: #eee;
-    color: #333;
+.boton-acceder {
+    background-color: #D9D9D9;
+    color: #1F2937;
     padding: 10px 25px;
     border-radius: 5px;
     text-decoration: none;
@@ -114,30 +105,31 @@ nav a:hover, nav a.active {
     transition: background-color 0.3s;
 }
 
-.btn-sign:hover {
-    background-color: #ddd;
+.boton-acceder:hover {
+    background-color: #6B7280;
+    color: white;
 }
 
-.hero {
+.seccion-hero {
     text-align: center;
     padding: 60px 20px 40px;
 }
 
-.hero h1 {
+.seccion-hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #333;
+    color: #1F2937;
 }
 
-.hero p {
+.seccion-hero p {
     font-size: 18px;
-    color: #666;
-    max-width: 600px;
+    color: #6B7280;
+    max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
-.container {
+.contenedor {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -146,26 +138,26 @@ nav a:hover, nav a.active {
     gap: 40px;
 }
 
-.form-section {
-    background-color: white;
+.seccion-formulario {
+    background-color: #D9D9D9;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0,0,0,0.08);
 }
 
-.form-group {
+.grupo-formulario {
     margin-bottom: 25px;
 }
 
-.form-group label {
+.grupo-formulario label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #333;
+    color: #1F2937;
 }
 
-.form-group input,
-.form-group textarea {
+.grupo-formulario input,
+.grupo-formulario textarea {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ddd;
@@ -175,18 +167,18 @@ nav a:hover, nav a.active {
     transition: border-color 0.3s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
     outline: none;
-    border-color: #00AEDE;
+    border-color: #00b1db;
 }
 
-.form-group textarea {
+.grupo-formulario textarea {
     resize: vertical;
     min-height: 150px;
 }
 
-.btn-submit {
+.boton-enviar {
     width: 100%;
     background-color: #00AEDE;
     color: white;
@@ -199,40 +191,39 @@ nav a:hover, nav a.active {
     transition: background-color 0.3s;
 }
 
-.btn-submit:hover {
-    background-color: #0099CC;
+.boton-enviar:hover {
+    background-color: #e88a29;
 }
 
-.info-section {
+.seccion-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.info-card {
+.tarjeta-info {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0,0,0,0.08);
 }
 
-.info-card h2 {
-    color: #FF9800;
+.tarjeta-info h2 {
+    color: #e88a29;
     font-size: 22px;
     margin-bottom: 15px;
 }
 
-.contact-info {
+.info-contacto {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-top: 15px;
 }
 
-.contact-icon {
+.icono-contacto {
     width: 40px;
     height: 40px;
-    background-color: #E3F2FD;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -240,45 +231,44 @@ nav a:hover, nav a.active {
     color: #00AEDE;
 }
 
-.social-links {
+.enlaces-sociales {
     display: flex;
     gap: 15px;
     margin-top: 15px;
 }
 
-.social-icon {
+.icono-social {
     width: 40px;
     height: 40px;
-    background-color: #f5f5f5;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: #6B7280;
     text-decoration: none;
     transition: all 0.3s;
 }
 
-.social-icon:hover {
-    background-color: #00AEDE;
+.icono-social:hover {
+    background-color: #00b1db;
     color: white;
 }
 
-.map-container {
+.contenedor-mapa {
     width: 100%;
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-footer {
+.pie-pagina {
     background-color: #f8f9fa;
     padding: 60px 50px 30px;
-    margin-top: auto;
-    flex-shrink: 0;
+    margin-top: 60px;
 }
 
-.footer-content {
+.contenido-pie {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -287,55 +277,55 @@ footer {
     margin-bottom: 40px;
 }
 
-.footer-section h3 {
+.seccion-pie h3 {
     font-size: 14px;
     text-transform: uppercase;
-    color: #666;
+    color: #6B7280;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-.footer-section ul {
+.seccion-pie ul {
     list-style: none;
 }
 
-.footer-section ul li {
+.seccion-pie ul li {
     margin-bottom: 12px;
 }
 
-.footer-section ul li a {
-    color: #333;
+.seccion-pie ul li a {
+    color: #1F2937;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer-section ul li a:hover {
-    color: #00AEDE;
+.seccion-pie ul li a:hover {
+    color: #00b1db;
 }
 
-.footer-bottom {
+.pie-inferior {
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid #ddd;
-    color: #999;
+    color: #6B7280;
     font-size: 14px;
 }
 
 @media (max-width: 768px) {
-    .container {
+    .contenedor {
         grid-template-columns: 1fr;
     }
 
-    .footer-content {
+    .contenido-pie {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    header {
+    .encabezado {
         flex-direction: column;
         gap: 20px;
     }
 
-    .hero h1 {
+    .seccion-hero h1 {
         font-size: 32px;
     }
 }
