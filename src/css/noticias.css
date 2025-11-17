@@ -12,21 +12,21 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1F2937;
     background-color: #ffffff;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.container {
+.contenedor {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header */
-.header {
+/* Encabezado */
+.encabezado {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -35,7 +35,7 @@ body {
     padding: 20px 0;
 }
 
-.nav-wrapper {
+.envoltura-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ body {
     gap: 0; 
     font-weight: 600;
     font-size: 18px;
-    color: #333;
+    color: #1F2937;
 }
 
 .logo span {
@@ -55,57 +55,59 @@ body {
 }
 
 
-.stair-step {
-    background: #00AEDE; 
+.escalon {
+    background: #00b1db; 
     border: none; 
     transition: all 0.3s;
 }
 
 
-.stair-step.stair-1 {
+.escalon.escalon-1 {
     width: 12px;
     height: 24px;
 }
 
 
-.stair-step.stair-2 {
+.escalon.escalon-2 {
     width: 12px;
     height: 16px;
+    background: #00b1db;
 }
 
 
-.stair-step.stair-3 {
+.escalon.escalon-3 {
     width: 12px;
     height: 8px;
+    background: #00b1db;
 }
 
 
-.logo-icon {
+.icono-logo {
     width: 30px;
     height: 30px;
-    background: linear-gradient(135deg, #00AEDE, #0099CC);
+    background: linear-gradient(135deg, #00b1db, #25555d);
     border-radius: 4px;
 }
 
-.nav {
+.navegacion {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.nav a {
+.navegacion a {
     text-decoration: none;
-    color: #666;
+    color: #6B7280;
     font-weight: 500;
     transition: color 0.3s;
 }
 
-.nav a:hover {
-    color: #00AEDE;
+.navegacion a:hover {
+    color: #00b1db;
 }
 
-.btn-primary {
-    background-color: #00AEDE;
+.boton-primario {
+    background-color: #00b1db;
     color: white !important;
     border: none;
     padding: 12px 24px;
@@ -117,70 +119,69 @@ body {
     display: inline-block; 
 }
 
-.btn-primary:hover {
-    background-color: #0099CC;
+.boton-primario:hover {
+    background-color: #25555d;
 }
 
-/* Main Content */
-.main-content {
+/* Contenido Principal */
+.contenido-principal {
     padding: 60px 0;
     flex: 1; 
 }
 
-/* Header */
-.page-header {
+/* Encabezado de Página */
+.encabezado-pagina {
     margin-bottom: 40px;
 }
 
-.page-header h1 {
+.encabezado-pagina h1 {
     font-size: 48px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 10px;
 }
 
-.subtitle {
+.subtitulo {
     font-size: 18px;
-    color: #999;
+    color: #6B7280;
 }
 
 /* Filtros */
-.filter-tabs {
+.pestanas-filtro {
     display: flex;
     gap: 15px;
     margin-bottom: 40px;
 }
 
-.tab {
+.pestana {
     background-color: transparent;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #D9D9D9;
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 500;
-    color: #666;
+    color: #6B7280;
     transition: all 0.3s;
 }
 
-.tab.active {
-    background-color: rgba(0, 174, 222, 0.2); 
-    border-color: #00AEDE;
+.pestana.activa {
+    background-color: #00AEDE33;
     color: #00AEDE; 
 }
 
-.tab:hover {
-    border-color: #00AEDE;
+.pestana:hover {
+    border-color: #00b1db;
 }
 
-/* News Grid */
-.news-grid {
+/* Cuadrícula de Noticias */
+.cuadricula-noticias {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 60px;
 }
 
-.news-card {
+.tarjeta-noticia {
     display: flex;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -189,12 +190,12 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.news-card:hover {
+.tarjeta-noticia:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.news-image {
+.imagen-noticia {
     flex-shrink: 0;
     width: 300px;
     height: 300px;
@@ -202,57 +203,57 @@ body {
     overflow: hidden;
 }
 
-.news-image img {
+.imagen-noticia img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.news-content {
+.contenido-noticia {
     padding: 30px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.news-tag {
+.etiqueta-noticia {
     display: inline-block;
-    color: #00AEDE;
+    color: #DE8E00;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.news-tag.orange {
-    color: #DE4800;
+.etiqueta-noticia.naranja {
+    color: #DE4600;
 }
 
-.news-tag.cyan {
+.etiqueta-noticia.cian {
     color: #00AEDE;
 }
 
-.news-title {
+.titulo-noticia {
     font-size: 24px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 15px;
 }
 
-.news-description {
-    color: #888888;
+.descripcion-noticia {
+    color: #6B7280;
     line-height: 1.8;
     margin-bottom: 15px;
     flex-grow: 1;
 }
 
-.news-date {
-    color: #999;
+.fecha-noticia {
+    color: #6B7280;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-.btn-secondary {
+.boton-secundario {
     background-color: #00AEDE;
     color: white;
     border: none;
@@ -264,119 +265,111 @@ body {
     align-self: flex-start;
 }
 
-.btn-secondary:hover {
-    background-color: #0099CC;
-}
 
-/* Indice de Páginas */
-.pagination {
+/* Índice de Páginas */
+.paginacion {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.page-btn {
+.boton-pagina {
     background-color: white;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #D9D9D9;
     width: 40px;
     height: 40px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    color: #666;
+    color: #6B7280;
     transition: all 0.3s;
 }
 
-.page-btn:hover {
-    border-color: #00AEDE;
-    color: #00AEDE;
+.boton-pagina:hover {
+    border-color: #00b1db;
+    color: #00b1db;
 }
 
-.page-btn.active {
+.boton-pagina.activa {
     background-color: #00AEDE;
     color: white;
-    border-color: #00AEDE;
 }
 
-.page-dots {
-    color: #999;
+.puntos-pagina {
+    color: #6B7280;
     padding: 0 5px;
 }
 
-/* Footer */
-.footer {
+/* Pie de Página */
+.pie-pagina {
     background-color: #f5f5f5;
     padding: 40px 0 20px;
     margin-top: auto; 
 }
 
-.footer-content {
+.contenido-pie {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.footer-logo {
+.logo-pie {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
-    color: #333;
+    color: #1F2937;
 }
 
-.footer-links {
+.enlaces-pie {
     display: flex;
     gap: 30px;
 }
 
-.footer-links a {
+.enlaces-pie a {
     text-decoration: none;
-    color: #666;
+    color: #6B7280;
     transition: color 0.3s;
 }
 
-.footer-links a:hover {
-    color: #00AEDE;
+.enlaces-pie a:hover {
+    color: #00b1db;
 }
 
-.social-links {
+.enlaces-sociales {
     display: flex;
     gap: 15px;
 }
 
-.social-icon {
+.icono-social {
     width: 40px;
     height: 40px;
-    background-color: #e0e0e0;
+    background-color:#f5f5f5;
+    color: #6B7280;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: background-color 0.3s;
 }
 
-.social-icon img {
+.icono-social img {
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
 
 
-.social-icon img[alt="YouTube"] {
-    width: 36px;
-    height: 36px;
+
+.icono-social:hover {
+    background-color: #00b1db;
 }
 
-.social-icon:hover {
-    background-color: #00AEDE;
-}
-
-.copyright {
+.derechos-autor {
     text-align: center;
-    color: #999;
+    color: #6B7280;
     font-size: 14px;
     padding-top: 20px;
     border-top: 1px solid #e0e0e0;
@@ -384,26 +377,26 @@ body {
 
 
 @media (max-width: 768px) {
-    .nav {
+    .navegacion {
         display: none;
     }
     
-    .news-card {
+    .tarjeta-noticia {
         flex-direction: column;
     }
     
-    .news-image {
+    .imagen-noticia {
         width: 100%;
         height: 200px;
     }
     
-    .footer-content {
+    .contenido-pie {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
     
-    .page-header h1 {
+    .encabezado-pagina h1 {
         font-size: 32px;
     }
 }
