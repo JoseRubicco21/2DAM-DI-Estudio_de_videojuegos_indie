@@ -145,7 +145,7 @@ img {
 }
 
 .tag_red {
-    color: #ec3815;
+    color: #DE4600;
     background-color: #DE460033;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -156,7 +156,7 @@ img {
 }
 
 .tag_blue {
-    color: #09BCED;
+    color: #00AEDE;
     background-color: #00AEDE33;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -193,7 +193,7 @@ img {
 }
 
 .button_detail {
-    background-color: #09BCED;
+    background-color: #00AEDE;
     border: none;
     border-radius: 20px;
     padding-top: 1.5%;
@@ -208,7 +208,7 @@ img {
 }
 
 .button_disabled {
-    background-color: #ec3815;
+    background-color: #DE4600;
     border: none;
     border-radius: 20px;
     padding-top: 1.5%;
@@ -223,7 +223,7 @@ img {
 }
 
 .blue_primary_text {
-    color: #09BCED;
+    color: #00AEDE;
 }
 
 .yellow_primary_text {
@@ -231,5 +231,5 @@ img {
 }
 
 .red_primary_text {
-    color: #ec3815;
+    color: #DE4600;
 }
