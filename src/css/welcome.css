@@ -1,0 +1,229 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Estilos del body */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #6B7280;
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: #000000;
+    padding: 60px 80px;
+    border-radius: 8px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo y títulos */
+.contenedor-logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.enlace-logo,
+.enlace-titulo {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.enlace-logo:hover,
+.enlace-titulo:hover {
+    opacity: 0.8;
+}
+
+.nombre-estudio {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.lema {
+    font-size: 1rem;
+    color: white;
+    margin: 15px 0 0 0;
+    font-weight: 300;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-red-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 0;
+    background: none;
+}
+
+.boton-red-social:hover {
+    color: #00b1db;
+    transform: translateY(-2px);
+}
+
+.boton-red-social .icono-social {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.boton-red-social:hover .icono-social {
+    filter: brightness(0) invert(1) sepia(1) saturate(10) hue-rotate(170deg);
+}
+
+/* Contenedor de botones */
+.contenedor-botones {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#DE8E00;
+    color: black;
+}
+
+.boton:hover {
+    background-color: #e88a29;
+    transform: translateY(-3px);
+}
+
+.icono-boton {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0);
+}
+
+/* Pie de página */
+.pie-pagina {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pie-pagina p {
+    font-size: 0.85rem;
+    color: #6B7280;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 40px 30px;
+    }
+
+    .nombre-estudio {
+        font-size: 2rem;
+    }
+
+    .lema {
+        font-size: 0.9rem;
+    }
+
+    .redes-sociales {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .boton-red-social {
+        font-size: 0.85rem;
+    }
+
+    .boton-red-social .icono-social {
+        width: 18px;
+        height: 18px;
+    }
+
+    .logo {
+        max-width: 350px;
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .boton {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 30px 20px;
+    }
+
+    .nombre-estudio {
+        font-size: 1.5rem;
+    }
+
+    .lema {
+        font-size: 0.85rem;
+    }
+
+    .redes-sociales {
+        gap: 15px;
+    }
+
+    .logo {
+        max-width: 280px;
+    }
+}
