@@ -56,7 +56,7 @@ body {
 
 
 .escalon {
-    background: #00b1db; 
+    background: #00AEDE; 
     border: none; 
     transition: all 0.3s;
 }
@@ -71,21 +71,21 @@ body {
 .escalon.escalon-2 {
     width: 12px;
     height: 16px;
-    background: #00b1db;
+    background: #00AEDE;
 }
 
 
 .escalon.escalon-3 {
     width: 12px;
     height: 8px;
-    background: #00b1db;
+    background: #00AEDE;
 }
 
 
 .icono-logo {
     width: 30px;
     height: 30px;
-    background: linear-gradient(135deg, #00b1db, #25555d);
+    background: linear-gradient(135deg, #00AEDE, #25555d);
     border-radius: 4px;
 }
 
@@ -103,11 +103,11 @@ body {
 }
 
 .navegacion a:hover {
-    color: #00b1db;
+    color: #00AEDE;
 }
 
 .boton-primario {
-    background-color: #00b1db;
+    background-color: #00AEDE;
     color: white !important;
     border: none;
     padding: 12px 24px;
@@ -170,7 +170,7 @@ body {
 }
 
 .pestana:hover {
-    border-color: #00b1db;
+    border-color: #00AEDE;
 }
 
 /* Cuadrícula de Noticias */
