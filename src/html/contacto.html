@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contáctanos - The Game Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/contacto.css">
 </head>
 <body>
-    <h1>Contacto</h1>
+    <header class="encabezado">
+        <div class="logo">
+            <div class="icono-logo">
+                <div class="rect-inferior"></div>
+                <div class="rect-superior"></div>
+            </div>
+            The Game Studio
+        </div>
+        <nav class="navegacion">
+            <a href="/src/html/index.html">Home</a>
+            <a href="/src/html/juegos.html">Games</a>
+            <a href="/src/html/noticias.html">About</a>
+            <a href="/src/html/contacto.html" class="active">Contact</a>
+        </nav>
+        <div class="botones-encabezado">
+            <a href="#" class="boton-comprar">Buy Now</a>
+            <a href="#" class="boton-acceder">Sign In</a>
+        </div>
+    </header>
+
+    
+<section class="contact-section">
+  <h1>Contáctanos</h1>
+  <p>¡Nos encantaría saber de ti! ¿Tienes alguna pregunta o comentario? Rellena
+     el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+
+  <div class="contact-container">
+    
+    <form class="form">
+      <label>Tu Nombre</label>
+      <input type="text" placeholder="Escribe tu nombre">
+
+      <label>Tu Email</label>
+      <input type="email" placeholder="Escribe tu dirección de correo electrónico">
+
+      <label>Tu Mensaje</label>
+      <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <aside class="sidebar">
+      <h3>Otras Formas de Conectar</h3>
+      <p><img src="correo.png" alt="correo"><strong>Email</strong><br>contacto@gamestudio.com</p>
+
+      <h3>Síguenos</h3>
+      <div class="social">
+        <span><img src="redes.png" alt="redes"></span>
+
+      </div>
+
+      <h3>Nuestra Ubicación</h3>
+      <div class="map-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.719684756367!2d-8.549812823210624!3d42.87876037114937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe419fe52f15%3A0x63b8a543bf549f26!2sI.E.S.%20San%20Clemente!5e0!3m2!1ses!2ses!4v1763635086214!5m2!1ses!2ses" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </aside>
+
+  </div>
+</section>
+
+
+    <footer class="pie-pagina">
+        <div class="contenido-pie">
+            <div class="seccion-pie">
+                <h3>SOLUCIONES</h3>
+                <ul>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Analíticas</a></li>
+                    <li><a href="#">Comercio</a></li>
+                    <li><a href="#">Estadísticas</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie">
+                <h3>SOPORTE</h3>
+                <ul>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Documentación</a></li>
+                    <li><a href="#">Guías</a></li>
+                    <li><a href="#">Estado de la API</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie">
+                <h3>COMPAÑÍA</h3>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Empleo</a></li>
+                    <li><a href="#">Prensa</a></li>
+                </ul>
+            </div>
+            <div class="seccion-pie">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="#">Reclamación</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Términos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-inferior">
+            © 2024 Game Studio, Inc. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
